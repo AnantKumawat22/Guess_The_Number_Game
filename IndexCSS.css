@@ -1,0 +1,443 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    font-family: sans-serif;
+    height:100%;
+}
+
+/* Nav Bar. */
+
+nav{
+    height:80px;
+    width:100%;
+    background-color: black;
+}
+
+#mainame{
+    color:white;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 80px;
+    padding:0px 100px;
+    letter-spacing: 1px;
+}
+
+nav ul{
+    float:right;
+}
+
+nav ul li{
+    display:inline;
+    margin-right: 5px;
+    line-height: 80px;
+}
+
+nav ul li a{
+    color:white;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:7px;
+    border-radius: 5px;
+    margin:7px 13px;
+}
+
+a:active,a:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(230, 70, 102);
+    transition: 0.5s; 
+}
+
+.check_btn{
+    color:white;
+    font-size: 35px;
+    float: right;
+    margin-right: 25px;
+    line-height: 75px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+#logorb{
+    display: none;
+}
+
+#copyright{
+    display: none;
+}
+
+/* Section. */
+
+section{
+    width:100%;
+    height:100%;
+    z-index: 4;
+    background-image: url("tttbg.jpg");
+}
+
+#name_of_game{
+    padding-top: 30px;
+    text-align: center;
+}
+
+#name_of_game p{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(141 82 230);
+    animation-name: namep;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+}
+
+@keyframes namep {
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-20px);
+    }
+}
+
+#name_of_game p:hover{
+    font-size: 60px;
+    font-weight: bold;
+    color:rgb(223, 83, 181);
+}
+
+
+#main_div{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    /* height:; */
+}
+
+/*Computer. */
+
+#comp_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    margin:auto;
+    text-align: center;
+}
+
+#comp_name{
+    margin-bottom: 30px;
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.computer{
+    margin-top: 10px;
+    font-size: 240px;
+    animation-name: computerfloat;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.7s;
+}
+
+@keyframes computerfloat {
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-4px);
+    }
+}
+
+#comp_num{
+    border-radius: 7px;
+    border:none;
+    width:200px;
+    height:50px;
+    color:white;
+    font-size: 40px;
+    padding:0px 75px;
+    background-color: black;
+}
+
+#comp_num_mark{
+    position: relative;
+    left: 2px;
+    top: 3px;
+}
+
+.label_comp{
+    margin: 10px 0px;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    color: rgb(54, 51, 51);
+}
+
+/*User. */
+
+#user_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    margin:auto;
+}
+
+#user_name{
+    margin: 5px 0px;
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#game_life{
+    margin-top:10px;
+    text-align: center;
+}
+
+.heart{
+    color:red;
+    letter-spacing: 5px;
+    font-size: 50px;
+    animation-name: heartanimation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.7s;
+}
+
+@keyframes heartanimation {
+    from{
+        transform:scaleX(1);
+        transform:scaleY(1);
+    }
+    to{
+        transform:scaleX(1.5);
+        transform:scaleY(1.1);
+    }
+}
+
+#game_div{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user{
+    font-size: 142px;
+    margin-bottom: 5px;
+    animation-name: useranimation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.7s;
+}
+
+@keyframes useranimation {
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-4px);
+    }
+}
+
+
+.label_user{
+    margin: 5px 0px;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    color: rgb(54, 51, 51);
+}
+
+#guess_num{
+    border-radius: 7px;
+    border:none;
+    width:300px;
+    height:50px;
+    font-size: 40px;
+    color:white;
+    padding:0px 120px;
+    background-color: black;
+}
+
+#guess_num:active{
+    border:none;
+}
+
+#show_itd{
+    font-size: 22px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#guess_btn{
+    cursor: pointer;
+    width: 100px;
+    margin-top: 15px;
+    height: 40px;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+    background-color: rgb(21, 233, 21);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#guess_btn:hover,#guess_btn:active{
+    background-color: rgb(16, 211, 16);
+}
+
+/*Media Queries. */
+
+@media(max-width:1065px){
+    #mainame{
+        padding:0px 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    #name_of_game p{
+        font-size: 40px;
+    }
+    #comp_name{
+        font-size: 35px;
+    }
+    #user_name{
+        font-size: 35px;
+    }
+    .computer{
+        font-size: 170px;
+    }
+    .heart{
+        font-size: 35px;
+    }
+    .user{
+        font-size: 110px;
+    }
+    .label_user, .label_comp{
+        font-size: 17px;
+    }
+    #comp_num{
+        width:150px;
+        height:40px;
+    }
+    #comp_num_mark{
+        position: relative;
+        left: -10px;
+        top: -3px;
+    }
+    #guess_num{
+        width:210px;
+        height:45px;
+        font-size: 35px;
+        padding:0 80px;
+    }
+    #guess_btn{
+        width:80px;
+        height:35px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:940px){
+    .check_btn{
+        display: block;
+    }
+    nav ul{
+        width:100%;
+        z-index: 499;
+        height:100vh;
+        background-color: rgb(56, 79, 128);
+        position: fixed;
+        text-align: center;
+        left:-100%;
+        top:80px;
+        transition: 1s all;
+    }
+    nav ul li{
+        display: block;
+        line-height:30px;
+        margin:50px 0px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background-color: white;
+        color:rgb(230, 70, 102);
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+
+    #logorb{
+        display:block;
+        width: 160px;
+        height: 120px;
+        margin:auto;
+    }
+    
+    #copyright{
+        display: block;
+        font-size: 20px;
+        color:white;
+    }
+    .Three_list{
+        margin:5px 0px;
+    }
+}
+
+@media(max-width:550px){
+    #main_div{
+        flex-direction: column;
+    }
+    #guess_btn{
+        margin-bottom: 45px;
+    }
+    #comp_div{
+        border-top:5px dotted black;
+        padding-top: 30px;
+    }
+    section{
+        height: auto;
+    }
+}
+
+@media(max-width:440px){
+    #mainame{
+        font-size: 30px;
+        padding:0 30px;
+    }
+    .label_user, .label_comp{
+        font-size: 16px;
+    }
+    #name_of_game p{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #user_div{
+        border-top:5px dotted black;
+        padding-top: 30px;
+    }
+    #user_name {
+        font-size: 30px;
+    }
+    .heart {
+        font-size: 25px;
+    }
+    #comp_name {
+        font-size: 30px;
+    }
+}

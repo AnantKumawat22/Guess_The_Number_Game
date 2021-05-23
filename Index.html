@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess-The-Number Game</title>
+    <script src="https://kit.fontawesome.com/4c63e30e23.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="IndexCSS.css">
+    <script src="IndexJS.js"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="check_btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label id="mainame">InfyGames</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+            <li class="Three_list"><a href="#">How to play</a></li>
+            <li class="Three_list"><img src="logorb.png" alt="Logo" id="logorb"></li>
+            <li class="Three_list">
+                <p id="copyright">&copy; Anant</p>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div id="name_of_game">
+            <p>Guess-The-Number Game </p>
+        </div>
+
+        <div id="main_div">
+
+            <div id="user_div">
+                <div id="user_name">You</div>
+                <div id="game_life">
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-heart heart"></i>
+                </div>
+                <div id="game_div">
+                    <i class="fas fa-child user"></i>
+                    <label for="guess_num" class="label_user">Enter Your Guess (1 - 50)</label>
+                    <input type="text" name="text" id="guess_num">
+                    <p id="show_itd"></p>
+                    <button onclick="guessfun();" id="guess_btn">GUESS</button>
+                </div>
+            </div>
+            <div id="comp_div">
+                <div id="comp_name">Computer</div>
+                <i class="fas fa-desktop computer"></i>
+                <label for="comp_num" class="label_comp">Answer</label>
+                <div id="comp_num">
+                    <p id="comp_num_mark">?</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
