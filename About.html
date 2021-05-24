@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://kit.fontawesome.com/4c63e30e23.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="AboutCSS.css">
+    <script>
+        function load() {
+            document.getElementById("loader").style.display = "none";
+        }
+        function check() {
+            if (document.getElementById("check").checked) {
+                document.getElementById("credit").style.display = "none";
+            }
+            else if (!(document.getElementById("check").checked)) {
+                document.getElementById("credit").style.display = "block";
+            }
+        }
+    </script>
+</head>
+
+<body onload="load();">
+    <div id="loader"></div>
+    <nav id="nav">
+        <input type="checkbox" id="check" onclick="check();">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">InfyGames</label>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li class="Three_list"><a href="FeedBack.html">Feedback</a></li>
+            <li class="Three_list"><img src="logorb.png" alt="Logo" id="logorb"></li>
+            <li class="Three_list">
+                <p id="copyright">&copy; Anant</p>
+            </li>
+        </ul>
+    </nav>
+    <div id="credit">Anant Kumawat.</div>
+    <section id="section">
+
+        <div><img src="logo.png" id="anantlogo"></div>
+        <div>
+            <img src="anant1.jpg" id="anantimg">
+        </div>
+    </section>
+</body>
+
+</html>

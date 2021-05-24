@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <script src="https://kit.fontawesome.com/4c63e30e23.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="AboutCSS.css">
+    <style>
+        #section {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url("tttbg.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        p {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        @media(max-width:843px) {
+            p {
+                font-size: 30px;
+            }
+        }
+
+        @media(max-width:504px) {
+            p {
+                font-size: 17px;
+            }
+        }
+
+        #loader {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            /* transition: 5s; */
+            background: #fff url('loader.gif') no-repeat center;
+            z-index: 888;
+        }
+    </style>
+    <script>
+        function load() {
+            document.getElementById("loader").style.display = "none";
+        }
+    </script>
+</head>
+
+<body onload="load();">
+    <div id="loader"></div>
+    <nav id="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">InfyGames</label>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="FeedBack.html">Feedback</a></li>
+            <li><img src="logorb.png" id="logorb" /></li>
+            <li>
+                <p id="copyright">&copy; ANANT</p>
+            </li>
+        </ul>
+    </nav>
+    <section id="section">
+        <p>😃FeedBack Will Be Update Soon.🎁</p>
+    </section>
+</body>
+
+</html>

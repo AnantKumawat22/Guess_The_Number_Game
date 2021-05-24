@@ -1,0 +1,206 @@
+/* Nav Bar. */
+
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    list-style:none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #e6d5b7;
+}
+
+nav{
+    background-color: black;
+    height:80px;
+    width:100%; 
+}
+
+label.logo{
+    color:white;
+    font-size: 35px;
+    line-height: 80px;
+    padding:0px 100px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+nav ul{
+    float:right;
+    margin-right:20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin-right:10px;
+}
+
+nav ul li a{
+    color:white;
+    font-size: 17px;
+    padding:7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a:active,a:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(230, 70, 102);
+    transition: 0.5s; 
+}
+
+#logorb{
+    display:none;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#copyright{
+    display: none;
+}
+
+#check{
+    display:none;
+}
+
+@media (max-width:1033px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:931px){
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background-color: rgb(56, 79, 128);
+        top:80px;
+        left:-100%;
+        text-align: center;
+        transition: all 1s;
+    }
+    nav ul li{
+        display: block;
+        margin:50px 0;
+        line-height: 30px;
+    } 
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background-color: white;
+        color:rgb(230, 70, 102);
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    #logorb{
+        display: block;
+        margin: auto;
+        width: 160px;
+        height: 120px;
+    }
+    #copyright{
+        display: block;
+        font-size: 20px;
+        color:white;
+    }
+    .Three_list{
+        margin:5px 0px;
+    }
+}
+
+@media(max-width:370px){
+    label.logo{
+        padding:0 10px;
+        font-size: 28px;
+    }
+}
+#section {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    background: url("tttbg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+
+#anantlogo{
+    box-shadow: 2px 2px 10px black;
+}
+
+#anantimg{
+    width:300px;
+    margin-left:3px;
+    height:300px;
+    box-shadow: 2px 2px 10px black;
+}
+
+@media(max-width:400px){
+    #anantimg{
+        width:250px;
+        height:250px;
+    }
+    #anantlogo{
+        width:250px;
+        height:250px;
+    }
+}
+
+#credit{
+    position: relative;
+    top:20px;
+    font-size: 50px;
+    text-align: center;
+    background-color: blueviolet;
+    color:white;
+    font-family: verdana;
+    word-spacing: 4px;
+    padding:20px;
+}
+
+@media(max-width:470px){
+    #credit{
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width:610px){
+    #credit{
+        margin-bottom: 30px;
+    }
+}
+
+#loader{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background: #fff url('loader.gif') no-repeat center;
+    z-index: 888;
+}

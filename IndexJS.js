@@ -3,6 +3,10 @@ var user = null;
 var count = 0;
 console.log(comp);
 
+function load() {
+    document.getElementById("loader").style.display = "none";
+}
+
 function guessfun(){
     user = document.getElementById('guess_num').value;
     if(comp != user){
