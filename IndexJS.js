@@ -7,6 +7,10 @@ function load() {
     document.getElementById("loader").style.display = "none";
 }
 
+function load_home() {
+    window.location.href = 'Index.html';
+}
+
 function guessfun(){
     user = document.getElementById('guess_num').value;
     if(comp != user){
@@ -63,14 +67,17 @@ function guessfun(){
             <i class="fas fa-heart-broken heart"></i>`;
             document.getElementById("game_div").innerHTML = `
             <i class="fas fa-sad-tear user"></i>
-            <p id="show_itd">You Loose !!</p>`;
+            <p id="show_itd">You Loose !!</p>
+            <button onclick="load_home();" id="guess_btn">PLAY AGAIN</button>`;
+            
             document.getElementById("comp_num_mark").innerText = `${comp}`;
         }
     }
     else if(comp == user){
         document.getElementById("game_div").innerHTML = `
         <i class="fas fa-laugh-wink user"></i>
-        <p id="show_itd">You Win :-) !!</p>`;
+        <p id="show_itd">You Win :-) !!</p>
+        <button onclick="load_home();" id="guess_btn">PLAY AGAIN</button>`;
         document.getElementById("comp_num_mark").innerText = `${comp}`;
     }
 }
