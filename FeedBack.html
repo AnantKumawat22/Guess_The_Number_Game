@@ -19,19 +19,19 @@
             background-size: cover;
         }
 
-        p {
+        #text_para {
             font-size: 50px;
             font-weight: bold;
         }
 
         @media(max-width:843px) {
-            p {
+            #text_para {
                 font-size: 30px;
             }
         }
 
         @media(max-width:504px) {
-            p {
+            #text_para {
                 font-size: 17px;
             }
         }
@@ -40,7 +40,6 @@
             position: fixed;
             width: 100%;
             height: 100vh;
-            /* transition: 5s; */
             background: #fff url('loader.gif') no-repeat center;
             z-index: 888;
         }
@@ -65,15 +64,15 @@
             <li><a href="About.html">About Us</a></li>
             <li><a href="Services.html">Services</a></li>
             <li><a href="Contact.html">Contact</a></li>
-            <li><a href="FeedBack.html">Feedback</a></li>
-            <li><img src="logorb.png" id="logorb" /></li>
-            <li>
-                <p id="copyright">&copy; ANANT</p>
+            <li class="Three_list"><a href="FeedBack.html">FeedBack</a></li>
+            <li class="Three_list"><img src="logorb.png" alt="Logo" id="logorb"></li>
+            <li class="Three_list">
+                <p id="copyright">&copy; Anant</p>
             </li>
         </ul>
     </nav>
     <section id="section">
-        <p>😃FeedBack Will Be Update Soon.🎁</p>
+        <p id="text_para">😃FeedBack Will Be Update Soon.🎁</p>
     </section>
 </body>
 
