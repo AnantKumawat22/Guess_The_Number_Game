@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How-To-Play</title>
+    <script src="https://kit.fontawesome.com/4c63e30e23.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="AboutCSS.css">
+    <style>
+        section{
+            width:100%;
+            height:100vh;
+            background: url('tttbg.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            width: 70%;
+            padding-top: 30px;
+            font-size: 22px;
+            margin:auto;
+        }
+        .heart{
+            color:red;
+        }
+        p{
+            margin: 40px 0px;
+        }
+        @media(max-width:980px){
+            .container{
+            width: 90%;
+            } 
+        }
+        @media(max-width:760px){
+            .container{
+                font-size: 17px;
+            }
+        } 
+    </style>
+    <script>
+        function load() {
+            document.getElementById("loader").style.display = "none";
+        }
+    </script>
+</head>
+<body onload="load();">
+    <div id="loader"></div>
+    <nav id="nav">
+        <input type="checkbox" id="check" onclick="check();">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">InfyGames</label>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li class="Three_list"><a href="FeedBack.html">Feedback</a></li>
+            <li class="Three_list"><img src="logorb.png" alt="Logo" id="logorb"></li>
+            <li class="Three_list">
+                <p id="copyright">&copy; Anant</p>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div class="container">
+            <p><i class="fas fa-star"></i> This is a Number Guessing Game.</p>
+            <p><i class="fas fa-star"></i> Computer will automatically Guess a random number from (1 - 50).</p>
+            <p><i class="fas fa-star"></i> You have to Guess that number.</p>
+            <p><i class="fas fa-star"></i> You have only 5 chances.</p>
+            <p><i class="fas fa-star"></i> Heart <i class="fas fa-heart heart"></i> symbol showing how much chances you have left. </p>
+            <p><i class="fas fa-star"></i> Don't worry, After first Guess computer will help you to find the number. By Giving Instruction above the guess button.</p>
+            <p><i class="fas fa-star"></i> When you Win or loose then computer will show answer.</p>
+        </div>
+    </section>
+</body>
+</html>
